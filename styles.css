@@ -228,3 +228,133 @@
     color: white;
     font-size: 14px;
 }
+
+.get__the__app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+    lighting-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 3rem 6rem;
+}
+
+.get__the__app .semiContainer {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.get__the__app .semiContainer .Left{
+    flex: 2;
+} 
+.get__the__app .semiContainer .Left img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.get__the__app .semiContainer .right {
+    flex: 4;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.get__the__app .semiContainer .right h1 {
+    font-weight: 600;
+    font-size: 32px;
+}
+.get__the__app .semiContainer .right p {
+    font-size: 12px;
+}
+.semiContainer .right .radio__button__container{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 24px;
+} 
+.semiContainer .right .radio__button__container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.semiContainer .right .radio__button__container div input {
+    height: 15px;
+    width: 15px;
+    accent-color: rgba(239, 79, 95)
+}
+
+.semiContainer .right .input__container {
+    display: flex;
+    gap: 12px;
+}
+.semiContainer .right .input__container input, 
+.semiContainer .right .input__container button {
+    padding: 10px 12px;
+}
+.semiContainer .right .input__container input{
+    border: 1.5px solid gray;
+    outline: none;
+    border-radius: 5px;
+    flex: auto;    
+}
+
+.semiContainer .right .input__container button {
+    background-color: rgba(239, 79, 95);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.semiContainer .right .input__container button:hover{
+    transition: 600ms;
+    transform: scale(1.05);
+}
+
+.semiContainer .right .download__app__container {
+    display: flex;
+    flex-direction: column;
+    gap: 11.5px;
+}
+
+.download__app__images{
+    display: flex;
+    gap: 18px;
+}
+.download__app__images img{
+    display: flex;
+    height: 30%;
+    width: 35%;
+}
+
+@media only screen and (max-width:1300px) {
+    .get__the__app .semiContainer .Left, 
+    .get__the__app .semiContainer .Left {
+        flex: 1;
+    }
+    .get__the__app .semiContainer{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:900px) {
+    .get__the__app{
+        padding: 32px;
+    }
+    .get__the__app .semiContainer{
+        width: 90%;
+    }
+}
+@media only screen and (max-width:700px) {
+    .get__the__app{
+        padding: 3rem, 0;
+    }
+    .get__the__app .semiContainer{
+        width: 80%;
+        flex-direction: column;
+    }
+}
