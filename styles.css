@@ -117,6 +117,114 @@
     }
 }
 
-    
+.container {
+    margin: 48px auto;
+    width: 80%;
+}    
 
+.we__offers{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
 
+.we__offers .card {
+    border-radius: 15px;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.we__offers .card:hover {
+    transform: scale(1.05);
+}
+
+.we__offers .card img {
+    width: 250px;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.we__offers .card h2{
+    padding: 0 10px;
+    font-size: 10px;
+    font-weight: 10px;
+}
+.we__offers .card p {
+    font-size: 10px;
+    padding: 0px 10px 10px 10px;
+}
+
+.collection {
+    font-weight: 600;
+}
+.sub__heading__container {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.sub__heading__container span:nth-child(2){
+    color: #ff78bf;
+    font-size: 13px;
+} 
+.collection__cards__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.collection__cards__container .card {
+    height: 300px;
+    min-width: 240px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.collection__cards__container .card1 {
+    background: url("./images/collection1.png");
+
+}
+.collection__cards__container .card2 {
+    background: url("./images/collection2.jpg");
+
+}
+.collection__cards__container .card3 {
+    background: url("./images/collection3.png");
+
+}
+.collection__cards__container .card4 {
+    background: url("./images/collection4.png");
+
+}
+.collection__cards__container .overlay {
+    display: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: linear-gradient(
+        0deg, rgba(0, 0, 0, 0.9)0%,
+        rgba(0, 0, 0, 0.05)50%,
+        rgba(0, 0, 0, 0.05)85%);   <!-- 0% bottom: ; to top shad-->
+}
+.collection__cards__container .card .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 16px;
+    color: white;
+    font-size: 14px;
+}
